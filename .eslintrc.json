@@ -4,13 +4,7 @@
     "env": {
         "jest": true
     },
-    "ignorePatterns": [
-        "!.*",
-        ".editorconfig",
-        "build",
-        "coverage",
-        "node_modules"
-    ],
+    "ignorePatterns": ["!.json", "build", "coverage", "node_modules"],
     "rules": {
         "prettier/prettier": "error",
         "block-scoped-var": "error",
