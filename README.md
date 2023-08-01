@@ -52,7 +52,7 @@ Package scripts:
   Run both `compile:watch` and `test:watch` concurrently, optionally using the
   system notifier (usually a banner) to alert you of test results.
 
-> ⚠️[!Warning]
+> **!Warning**
 > You may occasionally see an warning in the terminal with Jest output when
 > using `dev:notify` that starts with the following:
 >
