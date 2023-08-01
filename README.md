@@ -50,6 +50,15 @@ Package scripts:
   Run both `compile:watch` and `test:watch` concurrently, optionally using the
   system notifier (usually a banner) to alert you of test results.
 
+> ⚠️ **Warning**
+>
+> You may occasionally see an warning in the terminal with Jest output when
+> using `dev:notify` that starts with the following:
+>
+> _A worker process has failed to exit gracefully and has been force exited._
+>
+> When this happens, press `Ctrl-C` and try running `dev:notify` again.
+
 ## License
 
 Licensed under [MIT](./LICENSE).
