@@ -1,32 +1,26 @@
 {
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build",
-    "baseUrl": ".",
-    "paths":{
-	"#src/*": ["src/*"]
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "build",
+        "baseUrl": ".",
+        "paths": {
+            "#src/*": ["src/*"]
+        },
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["es2018"],
+        "module": "commonjs",
+        "noEmitOnError": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "pretty": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2018"
     },
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "declaration": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["es2018"],
-    "module": "commonjs",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "pretty": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2018"
-  },
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ],
-  "exclude": [
-    "build",
-    "node_modules"
-  ]
+    "include": ["src/**/*.ts", "test/**/*.ts"],
+    "exclude": ["build", "node_modules"]
 }
