@@ -58,12 +58,13 @@ Package scripts:
 
 > **Warning**
 >
-> You may occasionally see an warning in the terminal with Jest output when
-> using `dev:notify` that starts with the following:
+> When using `dev:notify`, you may occasionally see an warning in the terminal
+> Jest output that starts with the following:
 >
 > _A worker process has failed to exit gracefully and has been force exited._
 >
-> When this happens, press `Ctrl-C` and try running `dev:notify` again.
+> You can ignore it (it might go away on a subsequent test run) or you can
+> press `Ctrl-C` and try running `dev:notify` again.
 
 ## License
 
