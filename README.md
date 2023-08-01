@@ -1,6 +1,8 @@
-# create-typescript-app
+# Overview
 
-A starter Node.js app configured for TypeScript.
+This is a starter Node.js app configured for TypeScript. The app is generated
+using [@subfuzion/create-typescript-app
+](https://github.com/subfuzion/create-typescript-app).
 
 Configuration boilerplate includes:
 
@@ -25,31 +27,33 @@ Package scripts:
 
 - `prepare`  
   Configure a git `commit` hook (using [Husky](https://typicode.github.io/husky/))
-  for linting. If you used
-  [create-typescript-app](https://github.com/subfuzion/create-typescript-app),
-  then this has already been run for you.
-
-- `compile`  
-  `compile:watch`  
-  Transpile the app to the `build` directory.
+  for linting. You need to run this if you cloned this repo instead of
+  generating the app using
+  [@subfuzion/create-typescript-app
+  ](https://github.com/subfuzion/create-typescript-app).
 
 - `clean`  
   Remove the `build` directory
 
-- `lint`  
-  `lint:fix`  
+- `build` | `build:watch`  
+  Compile the app to the `build` directory.
+
+> **NOTE**
+>
+> The `build` directory is ignored by `.gitignore`. Depending on your workflow,
+> you might want to remove it to commit your compiled output.
+
+- `test` | `test:watch`  
+  Run tests with [Jest](https://jestjs.io/).
+
+- `lint` | `lint:fix`  
   Report and fix lint issues.  
   When committing staged files, Husky is configured (in `./husky/pre-commit`) to
   run [lint-staged](https://github.com/okonet/lint-staged), which gets its
   configuration from under `"lint-staged"` in `package.json`.
 
-- `test`  
-  `test:watch`  
-  Run tests with [Jest](https://jestjs.io/).
-
-- `dev`  
-  `dev:notify`  
-  Run both `compile:watch` and `test:watch` concurrently, optionally using the
+- `dev` | `dev:notify`  
+  Run both `build:watch` and `test:watch` concurrently, optionally using the
   system notifier (usually a banner) to alert you of test results.
 
 > **Warning**
