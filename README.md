@@ -1,17 +1,16 @@
 # Overview
 
 This is a starter Node.js app configured for TypeScript. The app is generated
-using [@subfuzion/create-typescript-app
-](https://github.com/subfuzion/create-typescript-app).
+using [@subfuzion/create-typescript-app].
 
 Configuration boilerplate includes:
 
-- [TypeScript](https://typescriptlang.org/)
-- [Jest](https://jestjs.io/)
+- [TypeScript]
+- [Jest]
 - Linting and formatting
-  - [EditorConfig](https://editorconfig.org/)
-  - [ESLint](https://eslint.org/)
-  - [Prettier](https://prettier.io/)
+  - [EditorConfig]
+  - [ESLint]
+  - [Prettier]
 
 The linting and formatting tools have been configured to work together:
 
@@ -26,11 +25,9 @@ you probably want to run: `npm run dev` or `npm run dev:notify`.
 Package scripts:
 
 - `prepare`  
-  Configure a git `commit` hook (using [Husky](https://typicode.github.io/husky/))
+  Configure a git `commit` hook (using [Husky])
   for linting. You need to run this if you cloned this repo instead of
-  generating the app using
-  [@subfuzion/create-typescript-app
-  ](https://github.com/subfuzion/create-typescript-app).
+  generating the app using [@subfuzion/create-typescript-app].
 
 - `clean`  
   Remove the `build` directory
@@ -44,12 +41,12 @@ Package scripts:
 > you might want to remove it to commit your compiled output.
 
 - `test` | `test:watch`  
-  Run tests with [Jest](https://jestjs.io/).
+  Run tests with [Jest].
 
 - `lint` | `lint:fix`  
   Report and fix lint issues.  
   When committing staged files, Husky is configured (in `./husky/pre-commit`) to
-  run [lint-staged](https://github.com/okonet/lint-staged), which gets its
+  run [lint-staged], which gets its
   configuration from under `"lint-staged"` in `package.json`.
 
 - `dev` | `dev:notify`  
@@ -68,4 +65,14 @@ Package scripts:
 
 ## License
 
-Licensed under [MIT](./LICENSE).
+Licensed under [MIT].
+
+[@subfuzion/create-typescript-app]: https://github.com/subfuzion/create-typescript-app/
+[EditorConfig]: https://editorconfig.org/
+[ESLint]: https://eslint.org/
+[Husky]: https://typicode.github.io/husky/
+[Jest]: https://jestjs.io/
+[lint-staged]: https://github.com/okonet/lint-staged/
+[MIT]: ./LICENSE
+[Prettier]: https://prettier.io/
+[TypeScript]: https://typescriptlang.org/
