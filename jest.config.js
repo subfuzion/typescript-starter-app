@@ -12,7 +12,7 @@ module.exports = {
     modulePaths: [compilerOptions.baseUrl],
     moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
     testMatch: [
-	    "**/[__]?tests[__]?/**/*.[jt]s?(x)",
-	    "**/?(*.)+(spec|test).[jt]s?(x)"
+        "**/[__]?tests[__]?/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)",
     ],
 };

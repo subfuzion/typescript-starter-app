@@ -5,17 +5,17 @@ using [@subfuzion/create-typescript-app].
 
 Configuration boilerplate includes:
 
-- [TypeScript]
-- [Jest]
-- Linting and formatting
-  - [EditorConfig]
-  - [ESLint]
-  - [Prettier]
+-   [TypeScript]
+-   [Jest]
+-   Linting and formatting
+    -   [EditorConfig]
+    -   [ESLint]
+    -   [Prettier]
 
 The linting and formatting tools have been configured to work together:
 
-- `.editorconfig` has format settings that feed into Prettier
-- `.eslintrc.json` uses Prettier for formatting
+-   `.editorconfig` has format settings that feed into Prettier
+-   `.eslintrc.json` uses Prettier for formatting
 
 ## Development
 
@@ -24,34 +24,34 @@ you probably want to run: `npm run dev` or `npm run dev:notify`.
 
 Package scripts:
 
-- `prepare`  
-  Configure a git `commit` hook (using [Husky])
-  for linting. You need to run this if you cloned this repo instead of
-  generating the app using [@subfuzion/create-typescript-app].
+-   `prepare`  
+    Configure a git `commit` hook (using [Husky])
+    for linting. You need to run this if you cloned this repo instead of
+    generating the app using [@subfuzion/create-typescript-app].
 
-- `clean`  
-  Remove the `build` directory
+-   `clean`  
+    Remove the `build` directory
 
-- `build` | `build:watch`  
-  Compile the app to the `build` directory.
+-   `build` | `build:watch`  
+    Compile the app to the `build` directory.
 
 > **NOTE**
 >
 > The `build` directory is ignored by `.gitignore`. Depending on your workflow,
 > you might want to remove it to commit your compiled output.
 
-- `test` | `test:watch`  
-  Run tests with [Jest].
+-   `test` | `test:watch`  
+    Run tests with [Jest].
 
-- `lint` | `lint:fix`  
-  Report and fix lint issues.  
-  When committing staged files, Husky is configured (in `./husky/pre-commit`) to
-  run [lint-staged], which gets its
-  configuration from under `"lint-staged"` in `package.json`.
+-   `lint` | `lint:fix`  
+    Report and fix lint issues.  
+    When committing staged files, Husky is configured (in `./husky/pre-commit`) to
+    run [lint-staged], which gets its configuration from under `"lint-staged"` in
+    `package.json`.
 
-- `dev` | `dev:notify`  
-  Run both `build:watch` and `test:watch` concurrently, optionally using the
-  system notifier (usually a banner) to alert you of test results.
+-   `dev` | `dev:notify`  
+    Run both `build:watch` and `test:watch` concurrently, optionally using the
+    system notifier (usually a banner) to alert you of test results.
 
 > **Warning**
 >
