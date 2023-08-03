@@ -4,25 +4,22 @@
         "plugin:node/recommended",
         "plugin:prettier/recommended"
     ],
-    "plugins": ["node", "prettier"],
+    "plugins": ["node"],
     "env": {
         "jest": true
     },
     "ignorePatterns": ["!.json", "build", "coverage", "node_modules"],
     "rules": {
-        "prettier/prettier": "error",
         "block-scoped-var": "error",
         "eqeqeq": "error",
         "no-var": "error",
         "prefer-const": "error",
-        "eol-last": "error",
-        "prefer-arrow-callback": "error",
-        "no-trailing-spaces": "error",
         "quotes": [
             "error",
             "double",
             {
-                "avoidEscape": true
+                "avoidEscape": true,
+                "allowTemplateLiterals": false
             }
         ],
         "no-restricted-properties": [
