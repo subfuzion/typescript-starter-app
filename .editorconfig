@@ -30,6 +30,6 @@ indent_size = 4
 indent_style = tab
 indent_size = 8
 
-[*.{c,cpp,cxx,h,go}
+[*.{c,cpp,cxx,h,go}]
 indent_style = tab
 indent_size = 8
