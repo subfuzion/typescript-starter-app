@@ -9,8 +9,8 @@
         "clean": "rimraf build",
         "build": "tsc",
         "build:watch": "npm run build -- --watch",
-        "lint": "eslint .",
-        "lint:fix": "npm run lint -- --fix .",
+        "lint": "eslint . --config=.config/.eslintrc.json --ignore-path=.config/.eslintignore",
+        "lint:fix": "npm run lint -- --fix",
         "pretest": "npm run lint",
         "test": "jest",
         "test:coverage": "npm run test --coverage",
@@ -42,7 +42,7 @@
         "typescript": "~5.1.6"
     },
     "lint-staged": {
-        "*.{json,md}": "prettier --write",
-        "*.{ts,tsx}": "eslint --fix"
+        "*.{json,md}": "prettier --config=.config/.prettierrc.json --ignore-path=.config/.prettierignore --write",
+        "*.{ts,tsx}": "eslint --config=.config/.eslintrc.json --ignore-path=.config/.eslintignore"
     }
 }

@@ -1,5 +1,9 @@
 {
-    "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:node/recommended",
+        "plugin:prettier/recommended"
+    ],
     "plugins": ["node", "prettier"],
     "env": {
         "jest": true
