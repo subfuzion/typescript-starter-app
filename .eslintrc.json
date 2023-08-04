@@ -8,7 +8,13 @@
     "env": {
         "jest": true
     },
-    "ignorePatterns": ["build", "coverage", "node_modules"],
+    "ignorePatterns": [
+	    "!.{js,jsx,ts,tsx}",
+	    ".husky",
+	    "build",
+	    "coverage",
+	    "node_modules"
+    ],
     "rules": {
         "block-scoped-var": "error",
         "eqeqeq": "error",
