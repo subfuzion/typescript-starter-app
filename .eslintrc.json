@@ -9,8 +9,6 @@
         "jest": true
     },
     "ignorePatterns": [
-	    "!.{js,jsx,ts,tsx}",
-	    ".husky",
 	    "build",
 	    "coverage",
 	    "node_modules"
